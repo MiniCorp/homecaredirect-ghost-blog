@@ -6,8 +6,8 @@
     	{{#foreach posts}}
         <div class="recent-single-post clearfix have-image">
             <a href="{{url}}">
-                {{#if image}}
-                    <div class="post-thumb pull-left" style="background-image: url({{image}});"></div>
+                {{#if feature_image}}
+                    <div class="post-thumb pull-left" style="background-image: url({{img_url feature_image}});"></div>
                 {{else}}
                     <div class="post-thumb pull-left"><i class="fa fa-image align-center"></i></div>
                 {{/if}}

@@ -7,9 +7,9 @@
 				<div class="featured-slider">
 					{{#foreach posts}}
 					<article class="slide clearfix" data-number="{{@number}}">
-						{{#if image}}
+						{{#if feature_image}}
 						<div class="featured-image">
-							<a href="{{url absolute="true"}}" style="background-image: url({{image}})">
+							<a href="{{url absolute="true"}}" style="background-image: url({{img_url feature_image}})">
 							</a>
 						</div>
 						{{/if}}

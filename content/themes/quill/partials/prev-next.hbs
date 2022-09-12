@@ -5,9 +5,9 @@
             <div class="prev-next-link align-center">
                 <a class="" href="{{url absolute="true"}}">Previous Post</a>
             </div>
-            {{#if image}}
+            {{#if feature_image}}
             <a href="{{url absolute="true"}}" class="permalink">
-                <div class="featured-image" style="background-image: url({{image}})">
+                <div class="featured-image" style="background-image: url({{img_url feature_image}})">
                     <div class="overlay align-center">
                         <div class="cell">
                             <span>Full Story <i class="fa fa-long-arrow-right"></i></span>
@@ -31,9 +31,9 @@
             <div class="prev-next-link align-center">
                 <a class="" href="{{url absolute="true"}}">Next Post</a>
             </div>
-            {{#if image}}
+            {{#if feature_image}}
             <a href="{{url absolute="true"}}" class="permalink">
-                <div class="featured-image" style="background-image: url({{image}})">
+                <div class="featured-image" style="background-image: url({{img_url feature_image}})">
                     <div class="overlay align-center">
                         <div class="cell">
                             <span>Full Story <i class="fa fa-long-arrow-right"></i></span>
