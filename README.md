@@ -19,11 +19,14 @@ If the above button does not work for you, disable anything that might be blocki
 
 After deployment,
 
-- First, visit Ghost at `https://YOURAPPNAME.herokuapp.com/ghost` to set up your admin account
-- The app may take a few minutes to come to life
-- Your blog will be publicly accessible at `https://YOURAPPNAME.herokuapp.com`
-- If you subsequently set up a [custom domain](https://devcenter.heroku.com/articles/custom-domains) for your blog, you’ll need to update your Ghost blog’s `APP_PUBLIC_URL` environment variable accordingly
+- First, visit Ghost at `https://YOURAPPNAME.herokuapp.com/ghost` to set up your admin account.
+- The app may take a few minutes to come to life.
+- Your blog will be publicly accessible at `https://YOURAPPNAME.herokuapp.com`.
+- If you subsequently set up a [custom domain](https://devcenter.heroku.com/articles/custom-domains) for your blog, you’ll need to update your Ghost blog’s `APP_PUBLIC_URL` environment variable accordingly.
 - If you create a lot of content or decide to scale-up the dynos to support more traffic, a more substantial, paid database plan will be required.
+
+### Enable SSL using Cloudflare
+Please checkout [this](https://support.cloudflare.com/hc/en-us/articles/205893698-Configure-Cloudflare-and-Heroku-over-HTTPS) article.
 
 ### Configuring S3 file uploads
 
@@ -47,7 +50,7 @@ A more permanent solution would be to use a custom domain and verify your domain
 
 FYI: You can access mailgun dashboard by visiting heroku dashboard > click on your app > resources tab > click on mailgun addon.
 
-### Chnage Config Vars Value in Heroku
+### Change Config Vars Value in Heroku
 How can I change the value of `APP_PUBLIC_URL`, `MAILGUN_API_KEY`, `MAILGUN_DOMAIN`, `MAILGUN_PUBLIC_KEY`, `MAILGUN_SMTP_LOGIN`, `MYSQL_DATABASE_URL or JAWSDB_URL`, `S3_ACCESS_KEY_ID` ...etc?
 You cannot change the value in the `config.production.json` but you can change the values using the `Heroku CLI` or `Heroku Dashboard`.
 For more information read <a href="https://lovekesh.tech/how-to-create-update-and-delete-config-vars-in-the-heroku-app/" target="_blank">here</a>
